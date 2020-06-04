@@ -3,7 +3,7 @@ FROM $BASE_IMAGE
 #
 #
 #
-MAINTAINER "Kirill Müller" <krlmlr+docker@mailbox.org>
+LABEL maintainer="zoravur.s@gmail.com"
 
 # Add docker prompt
 ADD .bashrc /root/
