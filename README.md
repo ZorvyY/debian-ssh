@@ -39,7 +39,8 @@ The images are built by [Docker hub](https://registry.hub.docker.com/u/krlmlr/de
 Each Debian release corresponds to a tag.  To run an SSH daemon in a new Debian "wheezy"
 container:
 
-    docker run -d -p 2222:22 -e SSH_KEY="$(cat ~/.ssh/id_rsa.pub)" krlmlr/debian-ssh:wheezy
+    docker run -d -p 2222:22 -e SSH_KEY="$(cat ~/.ssh/id_rsa.pub)" [name]
+    docker run -d -p 2222:22 -e SSH_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDXbCpJu2UesNS9jo+ydwihdaeNcIKNNROehTNQsVC+vRBMA/EmHWTpuIYp+3/niKwF8NCcD16g7rxt0Xa+dyMvVJHfYPZU5+nvfpG0Zf0cKyjHpRoiJvfUShcJZdISaq4SASa8Zyvc7pyhFACznkATgNCgoIollGuXS2kGAKwpb0eETYzjp5QDa2WTC8rup5lViguboVpAzYJfzkpu1IwbmsdjygZkcZDxBRqwUEXPHEuKV8VjJuWZE9n6tNWj7Y5j1jp88wJGX9+UwxrF1SyRdxnlPtDn9L2hPTY6oqTYJAoZuxHC97JbTi1uENlkRwU8uWHnruiKMRI+dWtDvep+mjoRFapyJOtP3b+EFA+KHAIXetYqaxmybs0DH8C/jqHIcORuJw0Kghg3bXQgHjaIIpHiMWU8FEvqHS6ridybN9prVHgsLzOZdkp1k6D2E9z9WSfW6AcoQW6sEaTj0bY5N1XrTvcVR+v7ktQPJTcRV11r5W8USx1vdbJrTYfpNoNsEDtblazK57x106vfbDh/lKkn+Uv9Ur8kEXcNXNZ1LU5VlOkeD6r48INx5/AAVTBUcMDUe9htNI/WEDQJtx8Ab86hyYvG88KlZxo970I9UhJZxFtdLZlE6RLCVW143gz5zufKGRVYGqg6qyl4Rwa0cJxCarLg11iCH1zzhM2neQ== zoravur.s@gmail.com" [name]
 
 This requires a public key in `~/.ssh/id_rsa.pub`.
 
