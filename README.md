@@ -4,8 +4,19 @@ debian-ssh
 Simple Debian/Ubuntu Docker images with *passwordless* SSH access and a regular user
 with `sudo` rights
 
+Usage
+--------------
+
+```sh
+mkdir docker-tmpdir && cd docker-tmpdir
+wget https://gist.githubusercontent.com/ZorvyY/9e9b26151e5af6d4d1667efabd4983eb/raw/f756acb7294116dd90eb937304a4bd260f2f1266/Dockerfile
+docker build -t [IMAGE NAME] --build-arg BASE_IMAGE=[YOUR DEBIAN BASED IMAGE] .
+```
+
 Tags (and their corresponding official base images)
 ----
+
+
 
 ### Debian
 
