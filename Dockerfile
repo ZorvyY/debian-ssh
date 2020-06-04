@@ -4,6 +4,10 @@ FROM debian:latest
 #
 MAINTAINER "Kirill Müller" <krlmlr+docker@mailbox.org>
 
+# Add docker prompt
+ADD .bashrc /root/
+
+
 # Install packages
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install openssh-server sudo
 ADD set_root_pw.sh /set_root_pw.sh
